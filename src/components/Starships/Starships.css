@@ -1,0 +1,21 @@
+.starships-container {
+    display: grid;
+    grid-template-columns: repeat(6, 6fr);
+    grid-column-gap: 40px;
+    gap: 100px; 
+    padding: 20px;
+}
+
+.starship {
+    background-color: rgba(169, 76, 192, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s;
+    grid-column: span 2;
+}
+
+.starship:hover {
+    transform: scale(1.05);
+}

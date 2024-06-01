@@ -1,0 +1,54 @@
+.characters-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.sidebar {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 300px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: rgb(207, 164, 164);
+    padding: 20px;
+    box-shadow: -2px 0 8px rgba(0, 0, 0, 0.5);
+    z-index: 10;
+    overflow-y: auto;
+}
+
+.character-card {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.6);
+    margin: 10px;
+    padding: 20px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.character-card:hover {
+    transform: scale(1.05);
+}
+
+.character-card h3 {
+    color: #c1e9fa;
+    margin-bottom: 10px;
+}
+
+.character-card p, .character-card div {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 5px;
+}
+
+.character-card a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.character-card a:hover {
+    text-decoration: underline;
+}

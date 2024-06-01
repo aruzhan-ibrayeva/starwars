@@ -1,0 +1,28 @@
+header {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1px 1px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul li {
+    flex: 1;
+    text-align: center;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    display: block;
+}
+
+nav ul li:not(:last-child) a {
+    border-right: 1px solid white; 
+}
